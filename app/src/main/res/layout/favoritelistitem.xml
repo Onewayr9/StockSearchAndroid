@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:id="@+id/sym">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="AAPL"
+            android:id="@+id/fav_symbol"
+            android:textColor="#000000"
+            android:textSize="25dp"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="0dp"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="0dp" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="$ 109.99"
+            android:textColor="#000000"
+            android:textSize="25dp"
+            android:layout_toLeftOf="@+id/fav_percent"
+            android:layout_marginRight="10dp"
+            android:id="@+id/fav_val" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:text="+0.92%"
+            android:id="@+id/fav_percent"
+            android:textSize="25dp"
+            android:textColor="#000000"
+            android:background="#0ff107" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/sym">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Apple Inc"
+            android:layout_alignParentLeft="true"
+            android:textColor="#000000"
+            android:textSize="16dp"
+            android:id="@+id/fav_name" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:text="MarketCap : 609.80 Billion"
+            android:textColor="#000000"
+            android:textSize="16dp"
+            android:id="@+id/fav_mktcp" />
+    </RelativeLayout>
+</RelativeLayout>
